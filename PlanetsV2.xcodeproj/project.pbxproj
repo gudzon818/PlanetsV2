@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4A714029BA69CB0036C274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A713E29BA69CB0036C274 /* LaunchScreen.storyboard */; };
+		CE4A714129BA69CB0036C274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A713F29BA69CB0036C274 /* Main.storyboard */; };
+		CEA5E5E029BA605B00B9648C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5E5DF29BA605B00B9648C /* Model.swift */; };
 		CECD91C029BA032400B181EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91BF29BA032400B181EF /* AppDelegate.swift */; };
 		CECD91C229BA032400B181EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91C129BA032400B181EF /* SceneDelegate.swift */; };
-		CECD91C429BA032400B181EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91C329BA032400B181EF /* ViewController.swift */; };
-		CECD91C729BA032400B181EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECD91C529BA032400B181EF /* Main.storyboard */; };
+		CECD91C429BA032400B181EF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91C329BA032400B181EF /* StartViewController.swift */; };
 		CECD91C929BA032500B181EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECD91C829BA032500B181EF /* Assets.xcassets */; };
-		CECD91CC29BA032500B181EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECD91CA29BA032500B181EF /* LaunchScreen.storyboard */; };
+		CECD91D429BA0A7A00B181EF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91D329BA0A7A00B181EF /* TabBarViewController.swift */; };
+		CECD91D629BA0AA500B181EF /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91D529BA0AA500B181EF /* PlanetsTableViewController.swift */; };
+		CECD91D829BA0B0200B181EF /* AboutPlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91D729BA0B0200B181EF /* AboutPlanetViewController.swift */; };
+		CECD91DA29BA0B2200B181EF /* KvizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91D929BA0B2200B181EF /* KvizViewController.swift */; };
+		CECD91DC29BA0B2D00B181EF /* DevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91DB29BA0B2D00B181EF /* DevViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4A713E29BA69CB0036C274 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE4A713F29BA69CB0036C274 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CEA5E5DF29BA605B00B9648C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CECD91BC29BA032400B181EF /* PlanetsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECD91BF29BA032400B181EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECD91C129BA032400B181EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CECD91C329BA032400B181EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CECD91C629BA032400B181EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CECD91C329BA032400B181EF /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CECD91C829BA032500B181EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CECD91CB29BA032500B181EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECD91CD29BA032500B181EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECD91D329BA0A7A00B181EF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CECD91D529BA0AA500B181EF /* PlanetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewController.swift; sourceTree = "<group>"; };
+		CECD91D729BA0B0200B181EF /* AboutPlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPlanetViewController.swift; sourceTree = "<group>"; };
+		CECD91D929BA0B2200B181EF /* KvizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KvizViewController.swift; sourceTree = "<group>"; };
+		CECD91DB29BA0B2D00B181EF /* DevViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEA5E5E129BA607B00B9648C /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A713E29BA69CB0036C274 /* LaunchScreen.storyboard */,
+				CE4A713F29BA69CB0036C274 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CEA5E5E229BA609300B9648C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5E5DF29BA605B00B9648C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA5E5E329BA60A600B9648C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CECD91BF29BA032400B181EF /* AppDelegate.swift */,
+				CECD91C129BA032400B181EF /* SceneDelegate.swift */,
+				CECD91CD29BA032500B181EF /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEA5E5E429BA60BF00B9648C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CECD91C329BA032400B181EF /* StartViewController.swift */,
+				CECD91D329BA0A7A00B181EF /* TabBarViewController.swift */,
+				CECD91D529BA0AA500B181EF /* PlanetsTableViewController.swift */,
+				CECD91D729BA0B0200B181EF /* AboutPlanetViewController.swift */,
+				CECD91D929BA0B2200B181EF /* KvizViewController.swift */,
+				CECD91DB29BA0B2D00B181EF /* DevViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CECD91B329BA032400B181EF = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +108,11 @@
 		CECD91BE29BA032400B181EF /* PlanetsV2 */ = {
 			isa = PBXGroup;
 			children = (
-				CECD91BF29BA032400B181EF /* AppDelegate.swift */,
-				CECD91C129BA032400B181EF /* SceneDelegate.swift */,
-				CECD91C329BA032400B181EF /* ViewController.swift */,
-				CECD91C529BA032400B181EF /* Main.storyboard */,
+				CEA5E5E329BA60A600B9648C /* App */,
+				CEA5E5E429BA60BF00B9648C /* ViewControllers */,
+				CEA5E5E129BA607B00B9648C /* StoryBoards */,
+				CEA5E5E229BA609300B9648C /* Model */,
 				CECD91C829BA032500B181EF /* Assets.xcassets */,
-				CECD91CA29BA032500B181EF /* LaunchScreen.storyboard */,
-				CECD91CD29BA032500B181EF /* Info.plist */,
 			);
 			path = PlanetsV2;
 			sourceTree = "<group>";
@@ -125,9 +175,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECD91CC29BA032500B181EF /* LaunchScreen.storyboard in Resources */,
+				CE4A714129BA69CB0036C274 /* Main.storyboard in Resources */,
 				CECD91C929BA032500B181EF /* Assets.xcassets in Resources */,
-				CECD91C729BA032400B181EF /* Main.storyboard in Resources */,
+				CE4A714029BA69CB0036C274 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +188,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECD91C429BA032400B181EF /* ViewController.swift in Sources */,
+				CEA5E5E029BA605B00B9648C /* Model.swift in Sources */,
+				CECD91DC29BA0B2D00B181EF /* DevViewController.swift in Sources */,
+				CECD91D429BA0A7A00B181EF /* TabBarViewController.swift in Sources */,
+				CECD91C429BA032400B181EF /* StartViewController.swift in Sources */,
 				CECD91C029BA032400B181EF /* AppDelegate.swift in Sources */,
 				CECD91C229BA032400B181EF /* SceneDelegate.swift in Sources */,
+				CECD91DA29BA0B2200B181EF /* KvizViewController.swift in Sources */,
+				CECD91D829BA0B0200B181EF /* AboutPlanetViewController.swift in Sources */,
+				CECD91D629BA0AA500B181EF /* PlanetsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CECD91C529BA032400B181EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CECD91C629BA032400B181EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CECD91CA29BA032500B181EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CECD91CB29BA032500B181EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CECD91CE29BA032500B181EF /* Debug */ = {
@@ -288,12 +325,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlanetsV2/Info.plist;
+				INFOPLIST_FILE = PlanetsV2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = gudzon818.PlanetsV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,12 +355,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlanetsV2/Info.plist;
+				INFOPLIST_FILE = PlanetsV2/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +368,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = gudzon818.PlanetsV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
