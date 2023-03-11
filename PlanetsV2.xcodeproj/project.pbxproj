@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21DD03229BBD3740051CA65 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21DD03029BBD3730051CA65 /* Planets.swift */; };
+		C21DD03329BBD3740051CA65 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21DD03129BBD3740051CA65 /* Questions.swift */; };
 		CE4A714129BA69CB0036C274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A713F29BA69CB0036C274 /* Main.storyboard */; };
-		CEA5E5E029BA605B00B9648C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5E5DF29BA605B00B9648C /* Model.swift */; };
-		CEA7831629BB12BD0076CF85 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7831429BB12BD0076CF85 /* Planets.swift */; };
-		CEA7831729BB12BD0076CF85 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7831529BB12BD0076CF85 /* Questions.swift */; };
 		CEA7831929BB15500076CF85 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7831829BB15500076CF85 /* Extension.swift */; };
 		CECD91C029BA032400B181EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91BF29BA032400B181EF /* AppDelegate.swift */; };
 		CECD91C229BA032400B181EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91C129BA032400B181EF /* SceneDelegate.swift */; };
@@ -24,10 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C21DD03029BBD3730051CA65 /* Planets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		C21DD03129BBD3740051CA65 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		CE4A713F29BA69CB0036C274 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CEA5E5DF29BA605B00B9648C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		CEA7831429BB12BD0076CF85 /* Planets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Planets.swift; path = "../../../../PlanetsV2 — копия/PlanetsV2/Model/Planets.swift"; sourceTree = "<group>"; };
-		CEA7831529BB12BD0076CF85 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Questions.swift; path = "../../../../PlanetsV2 — копия/PlanetsV2/Model/Questions.swift"; sourceTree = "<group>"; };
 		CEA7831829BB15500076CF85 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CECD91BC29BA032400B181EF /* PlanetsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECD91BF29BA032400B181EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +62,8 @@
 		CEA5E5E229BA609300B9648C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CEA7831429BB12BD0076CF85 /* Planets.swift */,
-				CEA7831529BB12BD0076CF85 /* Questions.swift */,
-				CEA5E5DF29BA605B00B9648C /* Model.swift */,
+				C21DD03029BBD3730051CA65 /* Planets.swift */,
+				C21DD03129BBD3740051CA65 /* Questions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,16 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA5E5E029BA605B00B9648C /* Model.swift in Sources */,
-				CEA7831629BB12BD0076CF85 /* Planets.swift in Sources */,
+				C21DD03229BBD3740051CA65 /* Planets.swift in Sources */,
 				CECD91DC29BA0B2D00B181EF /* DevViewController.swift in Sources */,
 				CEA7831929BB15500076CF85 /* Extension.swift in Sources */,
 				CECD91D429BA0A7A00B181EF /* TabBarViewController.swift in Sources */,
 				CECD91C429BA032400B181EF /* StartViewController.swift in Sources */,
 				CECD91C029BA032400B181EF /* AppDelegate.swift in Sources */,
-				CEA7831729BB12BD0076CF85 /* Questions.swift in Sources */,
 				CECD91C229BA032400B181EF /* SceneDelegate.swift in Sources */,
 				CECD91DA29BA0B2200B181EF /* KvizViewController.swift in Sources */,
+				C21DD03329BBD3740051CA65 /* Questions.swift in Sources */,
 				CECD91D829BA0B0200B181EF /* AboutPlanetViewController.swift in Sources */,
 				CECD91D629BA0AA500B181EF /* PlanetsTableViewController.swift in Sources */,
 			);
