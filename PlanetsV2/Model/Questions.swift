@@ -13,55 +13,56 @@ struct Question {
     
     static func getQuestion() -> [Question] {
         [
-        Question(
-            title: "Какую площадь поверхности планеты занимает Мировой океан?",
-            answers: [
-            Answer(title: "Приблизительно 70,8 %"),
-            Answer(title: "Приблизительно 72 %"),
-            Answer(title: "Приблизительно 73 %"),
-            Answer(title: "Приблизительно 78,0 %")
-            ]
-        ),
-        Question(
-            title: "Какая планета самая большая из карликовых?",
-            answers: [
-            Answer(title: "Меркурий"),
-            Answer(title: "Плутон"),
-            Answer(title: "Эрида"),
-            Answer(title: "Марс")
-            ]
-        ),
-        Question(
-            title: "Сколько спутников у Сатурна?",
-            answers: [
-            Answer(title: "83"),
-            Answer(title: "87"),
-            Answer(title: "85"),
-            Answer(title: "81")
-            ]
-        ),
-        Question(
-            title: "Какая планета третья по удаленности от Солнца?",
-            answers: [
-            Answer(title: "Земля"),
-            Answer(title: "Марс"),
-            Answer(title: "Плутон"),
-            Answer(title: "Луна")
-            ]
-        ),
-        Question(
-            title: "Какая планета была названа в честь древнегреческого бога Ареса?",
-            answers: [
-            Answer(title: "Уран"),
-            Answer(title: "Плутон"),
-            Answer(title: "Марс"),
-            Answer(title: "Юпитер")
-            ]
-        )
+            Question(
+                title: "Какую площадь поверхности планеты занимает Мировой океан?",
+                answers: [
+                    Answer(title: "Приблизительно 70,8 %", status: true),
+                    Answer(title: "Приблизительно 72 %", status: false),
+                    Answer(title: "Приблизительно 73 %", status: false),
+                    Answer(title: "Приблизительно 78,0 %", status: false)
+                ]
+            ),
+            Question(
+                title: "Какая планета самая большая из карликовых?",
+                answers: [
+                    Answer(title: "Меркурий", status: false),
+                    Answer(title: "Плутон", status: true),
+                    Answer(title: "Эрида", status: false),
+                    Answer(title: "Марс", status: false)
+                ]
+            ),
+            Question(
+                title: "Сколько спутников у Сатурна?",
+                answers: [
+                    Answer(title: "83", status: true),
+                    Answer(title: "87", status: false),
+                    Answer(title: "85", status: false),
+                    Answer(title: "81", status: false)
+                ]
+            ),
+            Question(
+                title: "Какая планета третья по удаленности от Солнца?",
+                answers: [
+                    Answer(title: "Земля", status: true),
+                    Answer(title: "Марс", status: false),
+                    Answer(title: "Плутон", status: false),
+                    Answer(title: "Луна", status: false)
+                ]
+            ),
+            Question(
+                title: "Какая планета была названа в честь древнегреческого бога Ареса?",
+                answers: [
+                    Answer(title: "Уран", status: false),
+                    Answer(title: "Плутон", status: false),
+                    Answer(title: "Марс", status: true),
+                    Answer(title: "Юпитер", status: false)
+                ]
+            )
         ]
     }
 }
 
 struct Answer {
     let title: String
+    let status: Bool
 }
