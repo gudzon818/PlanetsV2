@@ -14,7 +14,8 @@ class KvizViewController: UIViewController {
     @IBOutlet var answersButton: [UIButton]!
     
     private let questions = Question.getQuestion()
-    private let questionIndex = 0
+    private var questionIndex = 0
+    private var givenAnswers: [Answer] = []
     private var currentAnswers: [Answer] {
         questions[questionIndex].answers
     }
@@ -22,7 +23,6 @@ class KvizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        // Do any additional setup after loading the view.
     }
     
     
@@ -30,6 +30,9 @@ class KvizViewController: UIViewController {
         guard let buttonIndex = answersButton.firstIndex(of: sender) else { return }
         
         let currentAnswer = currentAnswers[buttonIndex]
+        givenAnswers.append(currentAnswer)
+        
+        goToNextStep()
     }
     
     /*
@@ -64,5 +67,16 @@ extension KvizViewController {
         for (button, answer) in zip(answersButton, answers) {
             button.setTitle(answer.title, for: .normal)
         }
+    }
+    
+    func goToNextStep() {
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+            return
+        }
+        
+        performSegue(withIdentifier: "showFinalResult", sender: nil)
     }
 }

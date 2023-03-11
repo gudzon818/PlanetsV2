@@ -41,12 +41,12 @@ struct Question {
             ]
         ),
         Question(
-            title: "Какую площадь поверхности планеты занимает Мировой океан?",
+            title: "Какая планета третья по удаленности от Солнца?",
             answers: [
-            Answer(title: "Приблизительно 70,8 %"),
-            Answer(title: "Приблизительно 72 %"),
-            Answer(title: "Приблизительно 73 %"),
-            Answer(title: "Приблизительно 78,0 %")
+            Answer(title: "Земля"),
+            Answer(title: "Марс"),
+            Answer(title: "Плутон"),
+            Answer(title: "Луна")
             ]
         ),
         Question(
