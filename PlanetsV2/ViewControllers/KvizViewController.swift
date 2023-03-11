@@ -9,13 +9,32 @@ import UIKit
 
 class KvizViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet var answersButton: [UIButton]!
+    
+    private let questions = Question.getQuestion()
+    private var questionIndex = 0
+    private var givenAnswers: [Answer] = []
+    private var currentAnswers: [Answer] {
+        questions[questionIndex].answers
     }
     
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
+    }
+    
+    
+    @IBAction func answerButtonTapped(_ sender: UIButton) {
+        guard let buttonIndex = answersButton.firstIndex(of: sender) else { return }
+        
+        let currentAnswer = currentAnswers[buttonIndex]
+        givenAnswers.append(currentAnswer)
+        
+        goToNextStep()
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +45,38 @@ class KvizViewController: UIViewController {
     }
     */
 
+}
+
+// MARK: - Set a private methods
+
+extension KvizViewController {
+    func updateUI() {
+        let currentQuestion = questions[questionIndex]
+        questionLabel.text = currentQuestion.title
+        titleLabel.text = "Вопрос № \(questionIndex + 1) из \(questions.count)"
+        
+        showCurrentAnswers()
+    }
+    
+    func showCurrentAnswers() {
+        showButtonsAnswers(with: currentAnswers)
+    }
+    
+    func showButtonsAnswers(with answers: [Answer]) {
+
+        for (button, answer) in zip(answersButton, answers) {
+            button.setTitle(answer.title, for: .normal)
+        }
+    }
+    
+    func goToNextStep() {
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+            return
+        }
+        
+        performSegue(withIdentifier: "showFinalResult", sender: nil)
+    }
 }
