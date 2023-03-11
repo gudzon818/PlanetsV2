@@ -158,11 +158,45 @@
                         <outletCollection property="answersButton" destination="NqJ-xp-erY" collectionClass="NSMutableArray" id="N9N-mJ-xB3"/>
                         <outletCollection property="answersButton" destination="JrS-s6-1ES" collectionClass="NSMutableArray" id="J37-CW-5lb"/>
                         <outletCollection property="answersButton" destination="sBJ-gt-10E" collectionClass="NSMutableArray" id="tnb-cW-e1n"/>
+                        <segue destination="POK-NP-Fcd" kind="show" identifier="showFinalResult" id="Zmt-Vp-Hoe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xs1-ZX-EEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537" y="165"/>
+            <point key="canvasLocation" x="2531" y="165"/>
+        </scene>
+        <!--Final Result View Controller-->
+        <scene sceneID="Nrs-Hq-UWk">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="POK-NP-Fcd" customClass="FinalResultViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXZ-lS-c0N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhJ-v0-pLj">
+                                <rect key="frame" x="20" y="273.5" width="280" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fUA-Nb-Ykx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EhJ-v0-pLj" firstAttribute="leading" secondItem="fUA-Nb-Ykx" secondAttribute="leading" constant="20" id="BOd-D5-ypf"/>
+                            <constraint firstItem="fUA-Nb-Ykx" firstAttribute="trailing" secondItem="EhJ-v0-pLj" secondAttribute="trailing" constant="20" id="Dso-96-vxE"/>
+                            <constraint firstItem="EhJ-v0-pLj" firstAttribute="centerY" secondItem="gXZ-lS-c0N" secondAttribute="centerY" id="moL-LX-4il"/>
+                            <constraint firstItem="EhJ-v0-pLj" firstAttribute="centerX" secondItem="gXZ-lS-c0N" secondAttribute="centerX" id="zLg-JH-leY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lrt-nz-Usk"/>
+                    <connections>
+                        <outlet property="showFinalResult" destination="EhJ-v0-pLj" id="7Gc-VP-VQM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOU-ex-KN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3324" y="165"/>
         </scene>
         <!--Планеты-->
         <scene sceneID="eOa-jN-sf2">
