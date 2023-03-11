@@ -38,12 +38,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="-60"/>
+            <point key="canvasLocation" x="681" y="-60"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="ELr-Cd-Gfd">
             <objects>
-                <tabBarController id="rJg-iT-pHu" customClass="TabBarViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="rJg-iT-pHu" customClass="TabBarViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="xBd-gz-xwO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1t4-oS-N2c">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -51,14 +51,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="a2z-t6-Wzx" kind="relationship" relationship="viewControllers" id="yZW-nd-Tyv"/>
-                        <segue destination="dCL-PL-V2Q" kind="relationship" relationship="viewControllers" id="Djb-lD-8Cv"/>
-                        <segue destination="GcL-kg-xox" kind="relationship" relationship="viewControllers" id="9lP-Gs-Cbj"/>
+                        <segue destination="0iP-Ns-XeT" kind="relationship" relationship="viewControllers" id="uei-8p-HLF"/>
+                        <segue destination="dCL-PL-V2Q" kind="relationship" relationship="viewControllers" id="Yv6-bL-pUG"/>
+                        <segue destination="GcL-kg-xox" kind="relationship" relationship="viewControllers" id="h2K-8B-bx5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVn-9B-J5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="-60"/>
+            <point key="canvasLocation" x="1628" y="-60"/>
         </scene>
         <!--Команда-->
         <scene sceneID="iaA-hN-cqq">
@@ -74,12 +74,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sci-ym-l2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="756"/>
+            <point key="canvasLocation" x="1629" y="849"/>
         </scene>
         <!--Квиз-->
         <scene sceneID="9eK-bZ-c8W">
             <objects>
-                <viewController id="dCL-PL-V2Q" customClass="KvizViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dCL-PL-V2Q" customClass="KvizViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="717-fm-8fp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,13 +90,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfq-AV-Zek">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tM-XY-vWW">
                                         <rect key="frame" x="0.0" y="43.5" width="280" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -106,6 +106,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-pu-Vi3">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34.5"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -114,6 +115,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-xp-erY">
                                         <rect key="frame" x="0.0" y="49.5" width="200" height="34.5"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -122,6 +124,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrS-s6-1ES">
                                         <rect key="frame" x="0.0" y="99" width="200" height="34.5"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -130,6 +133,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBJ-gt-10E">
                                         <rect key="frame" x="0.0" y="148.5" width="200" height="34.5"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -163,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xs1-ZX-EEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531" y="165"/>
+            <point key="canvasLocation" x="2781" y="395"/>
         </scene>
         <!--Final Result View Controller-->
         <scene sceneID="Nrs-Hq-UWk">
@@ -196,73 +200,116 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOU-ex-KN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3324" y="165"/>
+            <point key="canvasLocation" x="3833" y="394"/>
         </scene>
         <!--Планеты-->
-        <scene sceneID="eOa-jN-sf2">
+        <scene sceneID="YYT-Q3-sc9">
             <objects>
-                <navigationController id="a2z-t6-Wzx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="d8i-mJ-2fY"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XSq-1x-Zok">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="33U-2k-BD8" kind="presentation" identifier="table" id="kpr-TW-I9Z"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ve4-74-QX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2406" y="-571"/>
-        </scene>
-        <!--Планеты-->
-        <scene sceneID="L17-5c-h2s">
-            <objects>
-                <tableViewController id="33U-2k-BD8" customClass="PlanetsTableViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xuh-PH-nrj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                <tableViewController id="Hp7-Nc-Fd8" customClass="PlanetsTableViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="0xD-FS-NzV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="68X-Zk-Pai">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" textLabel="Ep7-ai-BIp" detailTextLabel="odj-Nj-bXc" style="IBUITableViewCellStyleSubtitle" id="mTT-e4-adf">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="68X-Zk-Pai" id="BIg-fd-PwH">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mTT-e4-adf" id="HaN-iO-dCy">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ep7-ai-BIp">
+                                            <rect key="frame" x="16" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="odj-Nj-bXc">
+                                            <rect key="frame" x="16" y="22.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="DE1-9i-5OW" kind="show" id="JWV-wp-yUh"/>
+                                    <segue destination="DE1-9i-5OW" kind="show" id="aQp-Gy-Qz2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="33U-2k-BD8" id="lbv-wM-Efr"/>
-                            <outlet property="delegate" destination="33U-2k-BD8" id="1nG-yF-iej"/>
+                            <outlet property="dataSource" destination="Hp7-Nc-Fd8" id="ze1-SL-8ib"/>
+                            <outlet property="delegate" destination="Hp7-Nc-Fd8" id="oKY-d1-NFx"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="mXe-ZU-LkD"/>
-                    <navigationItem key="navigationItem" id="0ML-Cu-bYo"/>
+                    <navigationItem key="navigationItem" title="Планеты" id="MFd-bx-KJE"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FnY-pe-NbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqd-K6-pQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3227" y="-571"/>
+            <point key="canvasLocation" x="3833" y="-571"/>
+        </scene>
+        <!--Планеты-->
+        <scene sceneID="Bhg-0S-Dcp">
+            <objects>
+                <navigationController id="0iP-Ns-XeT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="6Cu-wE-AhE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ftS-Qg-f4O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hp7-Nc-Fd8" kind="relationship" relationship="rootViewController" id="J5D-vy-wXG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9V-Lh-wFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781" y="-571"/>
         </scene>
         <!--About Planet View Controller-->
         <scene sceneID="MBX-q0-3lC">
             <objects>
-                <viewController id="DE1-9i-5OW" customClass="AboutPlanetViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="DE1-9i-5OW" customClass="AboutPlanetViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vb-2q-WRT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBG-Nk-wDz">
+                                <rect key="frame" x="20" y="102.5" width="280" height="53.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-d2-TTl">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="5W1-ap-jIa">
+                                        <rect key="frame" x="0.0" y="33" width="280" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A0S-ej-12J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A0S-ej-12J" firstAttribute="trailing" secondItem="qBG-Nk-wDz" secondAttribute="trailing" constant="20" id="03d-x0-T39"/>
+                            <constraint firstItem="qBG-Nk-wDz" firstAttribute="leading" secondItem="A0S-ej-12J" secondAttribute="leading" constant="20" id="t0b-pt-68G"/>
+                            <constraint firstItem="qBG-Nk-wDz" firstAttribute="top" secondItem="A0S-ej-12J" secondAttribute="top" constant="10" id="zD8-Ad-d75"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k0v-dy-byW"/>
+                    <connections>
+                        <outlet property="planetDescription" destination="5W1-ap-jIa" id="2Mi-oi-sPe"/>
+                        <outlet property="planetName" destination="jeN-d2-TTl" id="FWH-dQ-1DX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTy-gA-fCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4575" y="-571"/>
+            <point key="canvasLocation" x="4822.5" y="-571.47887323943667"/>
         </scene>
     </scenes>
     <resources>
@@ -271,6 +318,9 @@
         <image name="questionmark.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
