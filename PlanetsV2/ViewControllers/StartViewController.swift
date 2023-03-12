@@ -18,7 +18,24 @@ class StartViewController: UIViewController {
         buttonSettings()
         rotatePlanet()
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(planetTapped))
+        planetUiImageView.isUserInteractionEnabled = true
+        planetUiImageView.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+    @objc func planetTapped() {
+        let scale: CGFloat = 1.5
+        
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+            self.planetUiImageView.transform = CGAffineTransform(scaleX: scale, y: scale)
+        }) { (finished) in
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.planetUiImageView.transform = CGAffineTransform.identity
+            }, completion: nil)
+        }
+    }
+    
+    
    
 
     
@@ -37,8 +54,6 @@ class StartViewController: UIViewController {
     
     
     //: MARK UIButton and UIImageView settings
-
-
     private func buttonSettings() {
         infoButton.layer.cornerRadius = 10
         infoButton.backgroundColor = UIColor(red: 57/255, green: 24/255, blue: 51/255, alpha: 1)
@@ -52,9 +67,9 @@ class StartViewController: UIViewController {
         rotationAnimation.repeatCount = Float.greatestFiniteMagnitude
         planetUiImageView.layer.add(rotationAnimation, forKey: "rotationAnimation")
     }
+}
     
         
-}
 
 //        infoButton.layer.cornerRadius = 10
 //
