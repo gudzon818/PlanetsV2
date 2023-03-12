@@ -77,9 +77,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="a2z-t6-Wzx" kind="relationship" relationship="viewControllers" id="yZW-nd-Tyv"/>
-                        <segue destination="dCL-PL-V2Q" kind="relationship" relationship="viewControllers" id="Djb-lD-8Cv"/>
-                        <segue destination="GcL-kg-xox" kind="relationship" relationship="viewControllers" id="9lP-Gs-Cbj"/>
+                        <segue destination="aZr-6k-JXp" kind="relationship" relationship="viewControllers" id="oMA-Lg-P9k"/>
+                        <segue destination="dCL-PL-V2Q" kind="relationship" relationship="viewControllers" id="SzP-AS-9qs"/>
+                        <segue destination="GcL-kg-xox" kind="relationship" relationship="viewControllers" id="N0E-Wg-hzO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVn-9B-J5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -191,6 +191,99 @@
             </objects>
             <point key="canvasLocation" x="2531" y="165"/>
         </scene>
+        <!--Планеты-->
+        <scene sceneID="NJe-CX-Hez">
+            <objects>
+                <tableViewController id="CGB-tn-4pb" customClass="PlanetsTableViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cAV-W3-w9z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" id="jwD-wt-ulG">
+                                <rect key="frame" x="0.0" y="50" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jwD-wt-ulG" id="D1B-sn-m4p">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Mpv-fo-OEG" kind="show" id="c28-cH-H6t"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CGB-tn-4pb" id="aTX-WG-FWD"/>
+                            <outlet property="delegate" destination="CGB-tn-4pb" id="Q9G-8m-XM8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Планеты" id="8Pw-2A-Awd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r78-hL-KsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3558" y="-706"/>
+        </scene>
+        <!--About Planet View Controller-->
+        <scene sceneID="h7i-Ri-R1V">
+            <objects>
+                <viewController id="Mpv-fo-OEG" customClass="AboutPlanetViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CUI-Zh-ND5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9l0-5N-iRg">
+                                <rect key="frame" x="16" y="153" width="343" height="53.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx0-NA-YCx">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-q9-fxe">
+                                        <rect key="frame" x="0.0" y="36.333333333333343" width="343" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GA3-If-YhF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GA3-If-YhF" firstAttribute="trailing" secondItem="9l0-5N-iRg" secondAttribute="trailing" constant="16" id="FWz-dl-ZpK"/>
+                            <constraint firstItem="9l0-5N-iRg" firstAttribute="top" secondItem="GA3-If-YhF" secondAttribute="top" constant="10" id="HGi-1e-T6s"/>
+                            <constraint firstItem="9l0-5N-iRg" firstAttribute="leading" secondItem="GA3-If-YhF" secondAttribute="leading" constant="16" id="pDq-zN-bVo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KvB-lk-VK4"/>
+                    <connections>
+                        <outlet property="planetDescription" destination="Rgf-q9-fxe" id="9C3-4J-vD1"/>
+                        <outlet property="planetName" destination="Jx0-NA-YCx" id="ieJ-90-3Se"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Tf-DB-ZR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4614" y="-706"/>
+        </scene>
+        <!--Планеты-->
+        <scene sceneID="6sn-ft-J84">
+            <objects>
+                <navigationController id="aZr-6k-JXp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="Mba-oZ-15R"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Hzb-T4-TPF">
+                        <rect key="frame" x="0.0" y="47" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CGB-tn-4pb" kind="relationship" relationship="rootViewController" id="fyL-6S-Ccj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XY-eX-Dtn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530" y="-706"/>
+        </scene>
         <!--Final Result View Controller-->
         <scene sceneID="Nrs-Hq-UWk">
             <objects>
@@ -222,73 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOU-ex-KN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3324" y="165"/>
-        </scene>
-        <!--Планеты-->
-        <scene sceneID="eOa-jN-sf2">
-            <objects>
-                <navigationController id="a2z-t6-Wzx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="d8i-mJ-2fY"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XSq-1x-Zok">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="33U-2k-BD8" kind="presentation" identifier="table" id="kpr-TW-I9Z"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ve4-74-QX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2406" y="-571"/>
-        </scene>
-        <!--Планеты-->
-        <scene sceneID="L17-5c-h2s">
-            <objects>
-                <tableViewController id="33U-2k-BD8" customClass="PlanetsTableViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xuh-PH-nrj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="68X-Zk-Pai">
-                                <rect key="frame" x="0.0" y="50" width="375" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="68X-Zk-Pai" id="BIg-fd-PwH">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="DE1-9i-5OW" kind="show" id="JWV-wp-yUh"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="33U-2k-BD8" id="lbv-wM-Efr"/>
-                            <outlet property="delegate" destination="33U-2k-BD8" id="1nG-yF-iej"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="mXe-ZU-LkD"/>
-                    <navigationItem key="navigationItem" id="0ML-Cu-bYo"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FnY-pe-NbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3227" y="-571"/>
-        </scene>
-        <!--About Planet View Controller-->
-        <scene sceneID="MBX-q0-3lC">
-            <objects>
-                <viewController id="DE1-9i-5OW" customClass="AboutPlanetViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7vb-2q-WRT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="A0S-ej-12J"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="k0v-dy-byW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aTy-gA-fCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4575" y="-571"/>
+            <point key="canvasLocation" x="3558" y="165"/>
         </scene>
     </scenes>
     <resources>
