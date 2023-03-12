@@ -61,13 +61,13 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
-		CEA5E5E229BA609300B9648C /* Model */ = {
+		CEA5E5E229BA609300B9648C /* Planets */ = {
 			isa = PBXGroup;
 			children = (
 				C21DD03029BBD3730051CA65 /* Planets.swift */,
 				C21DD03129BBD3740051CA65 /* Questions.swift */,
 			);
-			path = Model;
+			path = Planets;
 			sourceTree = "<group>";
 		};
 		CEA5E5E329BA60A600B9648C /* App */ = {
@@ -117,7 +117,7 @@
 				CEA5E5E329BA60A600B9648C /* App */,
 				CEA5E5E429BA60BF00B9648C /* ViewControllers */,
 				CEA5E5E129BA607B00B9648C /* StoryBoards */,
-				CEA5E5E229BA609300B9648C /* Model */,
+				CEA5E5E229BA609300B9648C /* Planets */,
 				CECD91C829BA032500B181EF /* Assets.xcassets */,
 			);
 			path = PlanetsV2;
@@ -339,6 +339,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +370,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "1660417404_28-kartinkin-net-p-oboi-na-aifon-planeta-krasivo-32.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
