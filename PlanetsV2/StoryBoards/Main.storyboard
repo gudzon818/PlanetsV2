@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,13 +13,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI4-eZ-9DX">
-                                <rect key="frame" x="72" y="352" width="171" height="79"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="О планетах"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="zCM-jw-da7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planetka" translatesAutoresizingMaskIntoConstraints="NO" id="6im-BC-egF">
+                                <rect key="frame" x="209" y="47" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="gfj-HS-CJ4"/>
+                                    <constraint firstAttribute="height" constant="150" id="qWn-gQ-PGt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI4-eZ-9DX">
+                                <rect key="frame" x="97.666666666666686" y="578" width="180" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DfU-Ef-v9G"/>
+                                    <constraint firstAttribute="width" constant="180" id="vgg-7P-RKU"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="О планетах">
+                                    <color key="titleColor" red="0.41568627450980389" green="0.65490196078431373" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="rJg-iT-pHu" kind="presentation" modalPresentationStyle="fullScreen" id="GXK-P8-qdX"/>
                                 </connections>
@@ -28,17 +46,25 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dI4-eZ-9DX" secondAttribute="bottom" constant="137" id="Xh2-O2-4XP"/>
-                            <constraint firstItem="dI4-eZ-9DX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="352" id="Y6r-dv-axJ"/>
-                            <constraint firstItem="dI4-eZ-9DX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="erp-Mb-FiJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dI4-eZ-9DX" secondAttribute="trailing" constant="77" id="rtu-VT-5gc"/>
+                            <constraint firstItem="dI4-eZ-9DX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8bL-vx-DUE"/>
+                            <constraint firstAttribute="bottom" secondItem="zCM-jw-da7" secondAttribute="bottom" id="GZS-tT-CCm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dI4-eZ-9DX" secondAttribute="bottom" constant="150" id="Pbe-ZE-5GW"/>
+                            <constraint firstItem="zCM-jw-da7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pfi-A2-D1p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6im-BC-egF" secondAttribute="trailing" constant="16" id="YjN-Hk-d7U"/>
+                            <constraint firstItem="6im-BC-egF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gAb-0J-3sq"/>
+                            <constraint firstItem="zCM-jw-da7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="l5t-3n-au0"/>
+                            <constraint firstItem="zCM-jw-da7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w9B-qc-g04"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HpM-aw-kLe"/>
+                    <connections>
+                        <outlet property="infoButton" destination="dI4-eZ-9DX" id="TNq-PP-cp0"/>
+                        <outlet property="planetUiImageView" destination="6im-BC-egF" id="2bl-NL-pqF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="-60"/>
+            <point key="canvasLocation" x="850.39999999999998" y="-60.591133004926114"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="ELr-Cd-Gfd">
@@ -65,7 +91,7 @@
             <objects>
                 <viewController id="GcL-kg-xox" customClass="DevViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zdl-DT-LuV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="gF4-qh-YkK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,20 +107,20 @@
             <objects>
                 <viewController id="dCL-PL-V2Q" customClass="KvizViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="717-fm-8fp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hlu-Jc-x0j" userLabel="Top">
-                                <rect key="frame" x="20" y="40" width="280" height="65"/>
+                                <rect key="frame" x="20" y="87" width="335" height="65.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfq-AV-Zek">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="33.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tM-XY-vWW">
-                                        <rect key="frame" x="0.0" y="43.5" width="280" height="21.5"/>
+                                        <rect key="frame" x="0.0" y="43.666666666666657" width="335" height="21.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -102,10 +128,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bG9-qL-bhN" userLabel="buttonsAnswers">
-                                <rect key="frame" x="60" y="195" width="200" height="183"/>
+                                <rect key="frame" x="60" y="242.33333333333331" width="255" height="182.33333333333331"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-pu-Vi3">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -113,7 +139,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-xp-erY">
-                                        <rect key="frame" x="0.0" y="49.5" width="200" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="49.333333333333343" width="255" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -121,7 +147,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrS-s6-1ES">
-                                        <rect key="frame" x="0.0" y="99" width="200" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="98.666666666666657" width="255" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -129,7 +155,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBJ-gt-10E">
-                                        <rect key="frame" x="0.0" y="148.5" width="200" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="147.99999999999997" width="255" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -170,11 +196,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="POK-NP-Fcd" customClass="FinalResultViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gXZ-lS-c0N">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhJ-v0-pLj">
-                                <rect key="frame" x="20" y="273.5" width="280" height="21.5"/>
+                                <rect key="frame" x="20" y="395.33333333333331" width="335" height="21.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -204,7 +230,7 @@
                 <navigationController id="a2z-t6-Wzx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="d8i-mJ-2fY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XSq-1x-Zok">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -220,15 +246,15 @@
             <objects>
                 <tableViewController id="33U-2k-BD8" customClass="PlanetsTableViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xuh-PH-nrj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="68X-Zk-Pai">
-                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="68X-Zk-Pai" id="BIg-fd-PwH">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -253,7 +279,7 @@
             <objects>
                 <viewController id="DE1-9i-5OW" customClass="AboutPlanetViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vb-2q-WRT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="A0S-ej-12J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -266,8 +292,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background2" width="1920" height="1200"/>
         <image name="globe" catalog="system" width="128" height="123"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="planetka" width="900" height="900"/>
         <image name="questionmark.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
