@@ -17,7 +17,7 @@ class FinalResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calculateResult()
-        showFinalResult.text =  "Ваш результат равен - \(count)."
+        showFinalResult.text = "Ваш результат равен - \(count)."
     }
     
     private func calculateResult() {
