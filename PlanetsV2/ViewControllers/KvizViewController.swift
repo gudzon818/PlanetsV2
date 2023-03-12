@@ -15,7 +15,6 @@ class KvizViewController: UIViewController {
     
     private let questions = Question.getQuestion()
     private var questionIndex = 0
-    //private var count = 0
     private var givenAnswers: [Answer] = []
     private var currentAnswers: [Answer] {
         questions[questionIndex].answers
@@ -28,7 +27,6 @@ class KvizViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let finalResultVC = segue.destination as? FinalResultViewController else { return }
-        //finalResultVC.counter = count
         finalResultVC.answers = givenAnswers
     }
     
@@ -40,14 +38,6 @@ class KvizViewController: UIViewController {
         let currentAnswer = currentAnswers[buttonIndex]
         givenAnswers.append(currentAnswer)
         print(currentAnswers[buttonIndex].status)
-        
-        //        if currentAnswers[buttonIndex].status == currentAnswer.status {
-        //            count += 1
-        //            goToNextStep()
-        //        } else {
-        //            print("Wrong answer!")
-        //            goToNextStep()
-        //        }
         
         goToNextStep()
     }
