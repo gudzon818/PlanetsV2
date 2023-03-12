@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,21 +13,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="zCM-jw-da7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planetka" translatesAutoresizingMaskIntoConstraints="NO" id="6im-BC-egF">
-                                <rect key="frame" x="209" y="47" width="150" height="150"/>
+                                <rect key="frame" x="154" y="0.0" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="gfj-HS-CJ4"/>
                                     <constraint firstAttribute="height" constant="150" id="qWn-gQ-PGt"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI4-eZ-9DX">
-                                <rect key="frame" x="97.666666666666686" y="578" width="180" height="50"/>
+                                <rect key="frame" x="70" y="368" width="180" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DfU-Ef-v9G"/>
@@ -91,7 +91,7 @@
             <objects>
                 <viewController id="GcL-kg-xox" customClass="DevViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zdl-DT-LuV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="gF4-qh-YkK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -107,20 +107,20 @@
             <objects>
                 <viewController id="dCL-PL-V2Q" customClass="KvizViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="717-fm-8fp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hlu-Jc-x0j" userLabel="Top">
-                                <rect key="frame" x="20" y="87" width="335" height="65.333333333333314"/>
+                                <rect key="frame" x="20" y="40" width="280" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfq-AV-Zek">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tM-XY-vWW">
-                                        <rect key="frame" x="0.0" y="43.666666666666657" width="335" height="21.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="43.5" width="280" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -128,10 +128,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bG9-qL-bhN" userLabel="buttonsAnswers">
-                                <rect key="frame" x="60" y="242.33333333333331" width="255" height="182.33333333333331"/>
+                                <rect key="frame" x="60" y="195" width="200" height="183"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-pu-Vi3">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -139,7 +139,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-xp-erY">
-                                        <rect key="frame" x="0.0" y="49.333333333333343" width="255" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="200" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -147,7 +147,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrS-s6-1ES">
-                                        <rect key="frame" x="0.0" y="98.666666666666657" width="255" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="99" width="200" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -155,7 +155,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBJ-gt-10E">
-                                        <rect key="frame" x="0.0" y="147.99999999999997" width="255" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="148.5" width="200" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -196,15 +196,15 @@
             <objects>
                 <tableViewController id="CGB-tn-4pb" customClass="PlanetsTableViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cAV-W3-w9z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" id="jwD-wt-ulG">
-                                <rect key="frame" x="0.0" y="50" width="375" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jwD-wt-ulG" id="D1B-sn-m4p">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -228,20 +228,20 @@
             <objects>
                 <viewController id="Mpv-fo-OEG" customClass="AboutPlanetViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CUI-Zh-ND5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9l0-5N-iRg">
-                                <rect key="frame" x="16" y="153" width="343" height="53.333333333333343"/>
+                                <rect key="frame" x="16" y="102.5" width="288" height="53.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx0-NA-YCx">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="26.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-q9-fxe">
-                                        <rect key="frame" x="0.0" y="36.333333333333343" width="343" height="17"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="288" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -273,7 +273,7 @@
                 <navigationController id="aZr-6k-JXp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="Mba-oZ-15R"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Hzb-T4-TPF">
-                        <rect key="frame" x="0.0" y="47" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -289,22 +289,30 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="POK-NP-Fcd" customClass="FinalResultViewController" customModule="PlanetsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gXZ-lS-c0N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhJ-v0-pLj">
-                                <rect key="frame" x="20" y="395.33333333333331" width="335" height="21.666666666666686"/>
+                                <rect key="frame" x="20" y="273.5" width="280" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQg-cP-FyT">
+                                <rect key="frame" x="123" y="443" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fUA-Nb-Ykx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EhJ-v0-pLj" firstAttribute="leading" secondItem="fUA-Nb-Ykx" secondAttribute="leading" constant="20" id="BOd-D5-ypf"/>
                             <constraint firstItem="fUA-Nb-Ykx" firstAttribute="trailing" secondItem="EhJ-v0-pLj" secondAttribute="trailing" constant="20" id="Dso-96-vxE"/>
+                            <constraint firstItem="fUA-Nb-Ykx" firstAttribute="trailing" secondItem="VQg-cP-FyT" secondAttribute="trailing" constant="122" id="Xwd-RD-yVq"/>
+                            <constraint firstItem="VQg-cP-FyT" firstAttribute="leading" secondItem="fUA-Nb-Ykx" secondAttribute="leading" constant="123" id="mga-O9-His"/>
                             <constraint firstItem="EhJ-v0-pLj" firstAttribute="centerY" secondItem="gXZ-lS-c0N" secondAttribute="centerY" id="moL-LX-4il"/>
+                            <constraint firstItem="fUA-Nb-Ykx" firstAttribute="bottom" secondItem="VQg-cP-FyT" secondAttribute="bottom" constant="90" id="oLh-qD-EOB"/>
                             <constraint firstItem="EhJ-v0-pLj" firstAttribute="centerX" secondItem="gXZ-lS-c0N" secondAttribute="centerX" id="zLg-JH-leY"/>
                         </constraints>
                     </view>
