@@ -273,7 +273,7 @@
                 <navigationController id="aZr-6k-JXp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="Mba-oZ-15R"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Hzb-T4-TPF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -301,7 +301,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQg-cP-FyT">
                                 <rect key="frame" x="123" y="443" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Назад"/>
+                                <connections>
+                                    <segue destination="5v2-KF-uq3" kind="unwind" unwindAction="unwindFor:" id="WRq-n2-3bm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fUA-Nb-Ykx"/>
@@ -322,6 +325,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOU-ex-KN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5v2-KF-uq3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3558" y="165"/>
         </scene>

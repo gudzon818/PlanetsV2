@@ -37,10 +37,12 @@ class KvizViewController: UIViewController {
         
         let currentAnswer = currentAnswers[buttonIndex]
         givenAnswers.append(currentAnswer)
-        print(currentAnswers[buttonIndex].status)
         
         goToNextStep()
-    }    
+    }
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        dismiss(animated: true)
+    }
 }
 
 // MARK: - Set a private methods
