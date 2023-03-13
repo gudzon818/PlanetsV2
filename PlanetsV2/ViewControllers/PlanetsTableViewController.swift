@@ -10,10 +10,12 @@ import UIKit
 class PlanetsTableViewController: UITableViewController {
     
     private let listOfPlanet = Planet.getPlanet()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 90
+        tableView.backgroundColor = #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)
     }
     
     // MARK: - Navigation
@@ -43,6 +45,12 @@ extension PlanetsTableViewController {
         content.image = UIImage(named: planetCell.name)
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
+        cell.backgroundColor = #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)
+        
         return cell
     }
+    
+
+    
+   
 }
