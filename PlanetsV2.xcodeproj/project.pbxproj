@@ -11,7 +11,6 @@
 		C21DD03329BBD3740051CA65 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21DD03129BBD3740051CA65 /* Questions.swift */; };
 		C29E6EC029BC66A70070C5E4 /* FinalResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E6EBF29BC66A70070C5E4 /* FinalResultViewController.swift */; };
 		CE4A714129BA69CB0036C274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A713F29BA69CB0036C274 /* Main.storyboard */; };
-		CEA7831929BB15500076CF85 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7831829BB15500076CF85 /* Extension.swift */; };
 		CECD91C029BA032400B181EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91BF29BA032400B181EF /* AppDelegate.swift */; };
 		CECD91C229BA032400B181EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91C129BA032400B181EF /* SceneDelegate.swift */; };
 		CECD91C429BA032400B181EF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD91C329BA032400B181EF /* StartViewController.swift */; };
@@ -28,7 +27,6 @@
 		C21DD03129BBD3740051CA65 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		C29E6EBF29BC66A70070C5E4 /* FinalResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalResultViewController.swift; sourceTree = "<group>"; };
 		CE4A713F29BA69CB0036C274 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CEA7831829BB15500076CF85 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CECD91BC29BA032400B181EF /* PlanetsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECD91BF29BA032400B181EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECD91C129BA032400B181EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				CECD91D929BA0B2200B181EF /* KvizViewController.swift */,
 				C29E6EBF29BC66A70070C5E4 /* FinalResultViewController.swift */,
 				CECD91DB29BA0B2D00B181EF /* DevViewController.swift */,
-				CEA7831829BB15500076CF85 /* Extension.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,7 +192,6 @@
 			files = (
 				C21DD03229BBD3740051CA65 /* Planets.swift in Sources */,
 				CECD91DC29BA0B2D00B181EF /* DevViewController.swift in Sources */,
-				CEA7831929BB15500076CF85 /* Extension.swift in Sources */,
 				CECD91D429BA0A7A00B181EF /* TabBarViewController.swift in Sources */,
 				CECD91C429BA032400B181EF /* StartViewController.swift in Sources */,
 				CECD91C029BA032400B181EF /* AppDelegate.swift in Sources */,

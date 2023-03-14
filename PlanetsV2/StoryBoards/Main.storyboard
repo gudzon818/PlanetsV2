@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -253,7 +253,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cZV-Db-wAZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="Hlu-Jc-x0j" firstAttribute="leading" secondItem="cZV-Db-wAZ" secondAttribute="leading" constant="20" id="1vf-nD-lZk"/>
                             <constraint firstItem="cZV-Db-wAZ" firstAttribute="trailing" secondItem="Hlu-Jc-x0j" secondAttribute="trailing" constant="20" id="5dq-kS-vme"/>
@@ -286,6 +286,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGray4Color"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" id="jwD-wt-ulG">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
@@ -294,6 +295,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <connections>
                                     <segue destination="Mpv-fo-OEG" kind="show" id="c28-cH-H6t"/>
                                 </connections>
@@ -337,7 +339,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GA3-If-YhF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="GA3-If-YhF" firstAttribute="trailing" secondItem="9l0-5N-iRg" secondAttribute="trailing" constant="16" id="FWz-dl-ZpK"/>
                             <constraint firstItem="9l0-5N-iRg" firstAttribute="top" secondItem="GA3-If-YhF" secondAttribute="top" constant="10" id="HGi-1e-T6s"/>
@@ -360,7 +362,7 @@
                 <navigationController id="aZr-6k-JXp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Планеты" image="globe" catalog="system" id="Mba-oZ-15R"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Hzb-T4-TPF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -395,7 +397,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fUA-Nb-Ykx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="EhJ-v0-pLj" firstAttribute="leading" secondItem="fUA-Nb-Ykx" secondAttribute="leading" constant="20" id="BOd-D5-ypf"/>
                             <constraint firstItem="fUA-Nb-Ykx" firstAttribute="trailing" secondItem="EhJ-v0-pLj" secondAttribute="trailing" constant="20" id="Dso-96-vxE"/>
