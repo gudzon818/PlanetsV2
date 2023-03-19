@@ -10,7 +10,7 @@ import UIKit
 class AboutPlanetViewController: UIViewController {
     
     @IBOutlet weak var planetName: UILabel!
-    @IBOutlet weak var planetDescription: UILabel!
+    @IBOutlet weak var planetDescription: UITextView!
     
     var planet: Planet!
     

@@ -13,7 +13,7 @@ class PlanetsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 90
+        tableView.rowHeight = 80
     }
     
     // MARK: - Navigation
